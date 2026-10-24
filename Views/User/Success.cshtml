@@ -1,0 +1,18 @@
+@model Portfolio_With_MVC.Models.UserModel
+
+@{
+    ViewData["Title"] = "Success";
+}
+
+<h2>Form Submited Successful!</h2>
+
+<div>
+    <h4>Submitted User Details:</h4>
+    <hr />
+    <p><strong>First Name:</strong> @Model.FirstName</p>
+    <p><strong>Last Name:</strong> @Model.LastName</p>
+     <p><strong>Course:</strong> @Model.Course</p>
+    <p><strong>Email:</strong> @Model.Email</p>
+</div>
+
+<a asp-controller="User" asp-action="Create">Create Another User</a>
